@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+:root{
+    font-family:'Zain', sans-serif;
+    --primary-color: #6EBDDB;
+    --primary-color-hover: #6EBDDB;
+    --primary-color-alpha: #6ebcdba6;
+
+    --primary-font-color:rgb(229, 229, 229);
+    --secondary-font-color: #9de3ff;
+    --strong-font-color: white;
+
+    --white-color: #EBEFE5;
+    --black-color:#251C28;
+    --red-color:#eb4545;
+
+    --background-black-alpha:rgba(0, 0, 0, 0.5);
+    --background-black-alphaStrong:rgba(0, 0, 0, 0.5);
+
+    --white-shadow-color:rgba(255, 255, 255, 0.5);
+
+    color:var(--primary-font-color);
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url(../img/backgrounds/background.png) no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color:var(--background-black-alpha);
+    background-blend-mode:darken;
+}
+
+h1{
+    font-size:2em;
+}
+
+h1, h2, h3 {
+    font-weight:700;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-color-alpha);
+    border: none;
+    margin: 20px 0;
+}
+
+strong{
+    color:var(--strong-font-color);
+}
+
+header ul{
+    position:fixed;
+    z-index:100;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+    top:0;
+    width:100%;
+    height:17%;
+
+    background-color:var(--background-black-alpha);
+
+    list-style: none;
+    box-shadow: 0 0 10px var(--white-shadow-color);
+
+    backdrop-filter: blur(16px) saturate(180%);
+}
+header a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 2rem;
+
+    padding:10px;
+
+}
+header a:hover{
+    transition: 0.5s;
+    color:var(--primary-color);
+}
+header img{
+    position:absolute;
+    top: 0;
+    left:50vw;
+    transform: translateX(-50%);
+
+    height:100px;
+    margin:10px 0 10px 0;
+}
+
+.section1 .history{
+        display:flex;
+        flex-direction:column;
+        background:var(--background-black-alpha);
+        color:var(--primary-font-color);
+
+        width:50vw;
+
+        text-align:center;
+        
+        margin:200px 0 200px 50px;
+        padding:60px;
+        
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--white-shadow-color);
+
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);backdrop-filter:blur(10px);
+
+        font-size: 1.5rem;
+        line-height: 1.5;
+}
+.section1 img{
+    position: absolute;
+    scale:0.9;
+    top: -20px;
+    right: 30px;
+    rotate:10deg;
+
+    height:700px;
+
+    
+}
+
+.section2{
+    display:flex;
+    justify-content: center;
+
+}
+.section2 .timeline{
+    
+    flex-direction:column;
+    width:70vw;
+
+    background:var(--background-black-alpha);
+    color:var(--primary-font-color);
+    
+    padding:60px;
+    margin:0 0 200px 0;
+
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+
+    backdrop-filter: blur(16px) saturate(180%);
+
+    text-align:center;
+}
+.section2 .timeline p{
+    padding:0px 80px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    
+}
+
+.section3{
+    position:absolute;
+}
+.section3 img{
+    
+    position:absolute;
+
+    width: 300px;
+    border:8px solid var(--white-color);
+    border-bottom:28px solid var(--white-color);
+}
+.section3 .image1{
+    rotate:10deg;
+    top:-50px;
+    left:250px;
+}
+.section3 .image2{
+    rotate:-10deg;
+    top:100px;
+    left:50px;
+}
+.section3 .about_oda{
+    display:flex;
+    flex-direction:column;
+
+    width:50vw;
+    padding:50px 70px;
+    margin:0 50px 200px 500px;
+
+    text-align:center;
+    font-size:1.5em;
+
+    border-radius:10px;
+    border:2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+
+    background:var(--background-black-alpha);
+    backdrop-filter: blur(16px) saturate(180%);
+}
+
+
+.section4{
+    display:flex;
+    flex-direction:column;
+    
+    background:var(--background-black-alpha);
+    backdrop-filter:blur(16px) saturate(180%);
+    -webkit-backdrop-filter:blur(16px) saturate(180%);
+
+    border:2px solid var(--primary-color);
+    border-radius:10px;
+    box-shadow: 0 0 10px var(--white-shadow-color); 
+    
+    padding:50px;
+    margin:600px 200px 200px;
+    
+    font-size:1.5em;
+    line-height:1.5;
+    text-align:center;
+
+}
+.section4 h1{
+    font-size:2em;
+}
+
+.section5{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:var(--black-color);
+
+    height:100vh;
+
+    background-color:var(--background-black-alpha);
+    backdrop-filter:blur(16px) saturate(180%);
+
+    font-size:1.5em;
+}
+.section5 .character_div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px;
+    gap:10px;
+
+    border-radius:10px;
+    border:2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+
+    background-color:var(--white-color);
+
+    height:450px;
+    
+
+}
+.section5 .character_div input{
+    width:450px;
+    height:50px;
+    padding:0 25px;
+    border-radius:10px;
+    border:2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+}
+.section5 .character_div input::placeholder{
+    color:var(--black-color);
+}
+.section5 .character_div select{
+    display:flex;
+    justify-self:center;
+    align-items:center;
+
+    width:500px;
+    height:50px;
+    padding:0 25px;
+    border-radius:10px;
+    border:2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+}
+.input1, .input2, .input3{
+    display:flex;
+    flex-direction:column;
+
+    margin:20px 0 ;
+}
+.section5 button{
+    width:500px;
+    height:50px;
+    border-radius:10px;
+    border:2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--white-shadow-color);
+}
+.section5 button:hover{
+    background-color:var(--primary-color-hover);
+}
