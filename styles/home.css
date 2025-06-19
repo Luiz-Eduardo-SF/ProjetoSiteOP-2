@@ -124,13 +124,11 @@ header img{
 }
 .section1 img{
     position: absolute;
-    scale:0.9;
-    top: -20px;
-    right: 30px;
+    top: 40px;
+    right: 70px;
     rotate:10deg;
-
-    height:700px;
-
+    width: 37vw;
+    
     
 }
 
