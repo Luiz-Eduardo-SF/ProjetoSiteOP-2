@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+:root{
+    font-family:'Zain', sans-serif;
+    --primary-color: #6EBDDB;
+    --primary-color-hover: #6EBDDB;
+    --primary-color-alpha: #6ebcdba6;
+
+    --primary-font-color:rgb(229, 229, 229);
+    --secondary-font-color: #9de3ff;
+    --strong-font-color: white;
+
+    --white-color: #EBEFE5;
+    --black-color:#251C28;
+    --red-color:#eb4545;
+
+    --background-black-alpha:rgba(0, 0, 0, 0.5);
+    --background-black-alphaStrong:rgba(0, 0, 0, 0.5);
+
+    --white-shadow-color:rgba(255, 255, 255, 0.5);
+
+    color:var(--primary-font-color);
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url(../img/backgrounds/background.png) no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color:var(--background-black-alpha);
+    background-blend-mode:darken;
+}
+
+h1{
+    font-size:2em;
+}
+
+h1, h2, h3 {
+    font-weight:700;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-color-alpha);
+    border: none;
+    margin: 20px 0;
+}
+
+strong{
+    color:var(--strong-font-color);
+}
+
+header ul{
+    position:fixed;
+    z-index:100;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+    top:0;
+    width:100%;
+    height:17%;
+
+    background-color:var(--background-black-alpha);
+
+    list-style: none;
+    box-shadow: 0 0 10px var(--white-shadow-color);
+
+    backdrop-filter: blur(16px) saturate(180%);
+}
+header a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 2rem;
+
+    padding:10px;
+
+}
+header a:hover{
+    transition: 0.5s;
+    color:var(--primary-color);
+}
+header img{
+    position:absolute;
+    top: 0;
+    left:50vw;
+    transform: translateX(-50%);
+
+    height:100px;
+    margin:10px 0 10px 0;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
+}

@@ -258,7 +258,6 @@ header img{
     background-color:var(--white-color);
 
     height:450px;
-    
 
 }
 .section5 .character_div input{
@@ -300,4 +299,12 @@ header img{
 }
 .section5 button:hover{
     background-color:var(--primary-color-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
 }
