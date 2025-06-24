@@ -169,7 +169,7 @@ section {
 }
 
 .section3 .img_oda img {
-  width: 45%;
+  width: 50%;
   max-width: 300px;
   border: 8px solid var(--white-color);
   border-bottom: 28px solid var(--white-color);

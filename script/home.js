@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navList = document.querySelector('.nav-list');
 
     mobileMenu.addEventListener('click', function() {
-        navList.classList.toggle('active'); // Mostra/oculta o menu no mobile
+        navList.classList.toggle('active'); // Mostra e oculta o menu no mobile
     });
 
     const form = document.getElementById('favorite-character-form');
