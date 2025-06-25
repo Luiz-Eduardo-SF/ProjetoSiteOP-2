@@ -52,6 +52,7 @@ hr {
   background-color: var(--primary-color-alpha);
   border: none;
   margin: 20px 0;
+
 }
 
 strong {
@@ -66,6 +67,14 @@ header {
   box-shadow: 0 0 10px var(--white-shadow-color);
   z-index: 1000;
   backdrop-filter: blur(16px) saturate(180%);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  margin-top: 60px;
 }
 
 .nav-list {
@@ -124,111 +133,36 @@ section {
   margin-bottom: 60px;
 }
 
-.section1 {
-  position: relative;
-}
-
 .section1 .history,
-.section2 .timeline,
-.section3 .about_oda,
-.section4,
-.section5 .character_div {
+.section2 .bounty,
+.section3 .curiosity,
+.section4 .habilitys{
   background: var(--background-black-alpha);
   backdrop-filter: blur(16px) saturate(180%);
   border: 2px solid var(--primary-color);
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   box-shadow: 0 0 10px var(--white-shadow-color);
   color: var(--primary-font-color);
   margin: 0 auto;
   width: 100%;
   max-width: 90vw;
+  text-align:center;
 }
 
-.section1 .imageMarry {
-  position: absolute;
-  top: -90px;
-  right: 0;
-  max-width: 40%;
+.section3 .curiosity ul,
+.section4 .habilitys ul{
+  list-style: none;
 }
 
-.section1 .imageMarry img {
-  width: 100%;
-  height: auto;
-  display: block;
+.section1{
+  margin-top:100px;
 }
 
-.section3 .img_oda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 
-.section3 .img_oda img {
-  width: 50%;
-  max-width: 300px;
-  border: 8px solid var(--white-color);
-  border-bottom: 28px solid var(--white-color);
-  object-fit: cover;
-}
-
-.section4 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.section5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.section5 form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  top: 10px;
-}
-
-input, select, button {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 0 6px var(--white-shadow-color);
-  font-size: 1rem;
-}
-
-input::placeholder {
-  color: var(--black-color);
-}
-
-button {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: var(--primary-color-hover);
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #111;
-  color: #fff;
-  margin-top: 60px;
-}
 
 @media (min-width: 768px) {
+
   .menu-toggle {
     display: none;
   }
@@ -254,18 +188,14 @@ footer {
   }
 
   .section1 .history,
-  .section3 .about_oda {
-    max-width: 70vw;
-    font-size: 1.5rem;
+  .section2 .bounty,
+  .section3 .curiosity,
+  .section4 .habilitys{
+
+  max-width:70vw;
   }
 
-  .section2 .timeline {
-    max-width: 70vw;
-  }
-
-  .section4,
-  .section5 .character_div {
-    max-width: 800px;
-    font-size: 1.3rem;
+  .section1{
+    margin-top:150px;
   }
 }

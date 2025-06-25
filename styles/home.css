@@ -125,10 +125,6 @@ section {
   margin-bottom: 60px;
 }
 
-.section1 {
-  position: relative;
-}
-
 .section1 .history,
 .section2 .timeline,
 .section3 .about_oda,
@@ -138,15 +134,16 @@ section {
   backdrop-filter: blur(16px) saturate(180%);
   border: 2px solid var(--primary-color);
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   box-shadow: 0 0 10px var(--white-shadow-color);
   color: var(--primary-font-color);
-  margin: 0 auto;
+  margin: 0 auto; 
   width: 100%;
   max-width: 90vw;
+  text-align:center;
 }
 
-.section1 .imageMarry {
+/* .section1 .imageMarry {
   position: absolute;
   top: -90px;
   right: 0;
@@ -157,7 +154,7 @@ section {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 .section3 .img_oda {
   display: flex;
@@ -229,6 +226,7 @@ footer {
   margin-top: 60px;
 }
 
+
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -255,29 +253,29 @@ footer {
   }
 
   .section1 .history,
-  .section3 .about_oda {
-    max-width: 70vw;
-    font-size: 1.5rem;
-  }
+.section2 .timeline,
+.section3 .about_oda,
+.section4,
+.section5 .character_div {
+  max-width:70vw;
+}
 
-  .section2 .timeline {
-    max-width: 70vw;
+  .section1 .history,
+  .section3 .about_oda {
+    font-size: 1.5rem;
   }
 
   .section4,
   .section5 .character_div {
-    max-width: 800px;
     font-size: 1.3rem;
   }
 
-  .section1 .imageMarry {
+  /* .section1 .imageMarry {
     top: -100px;
     right: -50px;
-    max-width: 300px;
-  }
+  } */
 
   .section5 form {
-    max-width: 70vw;
     max-height: 70vh;
   }
 
